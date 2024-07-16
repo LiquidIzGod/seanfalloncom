@@ -1,13 +1,13 @@
 import React from "react";
 import "./Introduction.css";
-import ImageComponent from "./ImageComponent";
-import TextComponent from "./TextComponent";
+import BgProfile from "../../Components/BgProfile/BgProfile";
+import IntroText from "../../Components/IntroText/IntroText";
 
 const Introduction = () => {
   return (
     <div className="introduction">
-      <TextComponent />
-      <ImageComponent />
+      <IntroText />
+      <BgProfile />
     </div>
   );
 };

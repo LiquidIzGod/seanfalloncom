@@ -1,0 +1,32 @@
+.intro-text {
+    color: #fff;
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .intro-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .intro-text p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .call-to-action {
+    background-color: #fed766;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-to-action:hover {
+    background-color: #e5c05a;
+  }
+  
