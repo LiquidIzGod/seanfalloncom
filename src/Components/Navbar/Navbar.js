@@ -4,6 +4,7 @@ import homeIcon from "../../assets/icons/icon_home.png";
 import introIcon from "../../assets/icons/icon_introductions.png";
 import skillsIcon from "../../assets/icons/icon_skillsets.png";
 import contentIcon from "../../assets/icons/icon_content.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,28 +20,28 @@ const Navbar = () => {
       </div>
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li className="nav-item">
-          <a href="/" className="nav-link">
+          <NavLink to="/" className="nav-link" activeClassName="active">
             <img src={homeIcon} alt="Home" className="nav-icon" />
             <span className="nav-text">Home</span>
-          </a>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a href="/introductions" className="nav-link">
+          <NavLink to="/introductions" className="nav-link" activeClassName="active">
             <img src={introIcon} alt="Introductions" className="nav-icon" />
             <span className="nav-text">Introductions</span>
-          </a>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a href="/skillsets" className="nav-link">
+          <NavLink to="/skillsets" className="nav-link" activeClassName="active">
             <img src={skillsIcon} alt="Skillsets" className="nav-icon" />
             <span className="nav-text">Skillsets</span>
-          </a>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a href="/content" className="nav-link">
+          <NavLink to="/content" className="nav-link" activeClassName="active">
             <img src={contentIcon} alt="Content" className="nav-icon" />
             <span className="nav-text">Content</span>
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
