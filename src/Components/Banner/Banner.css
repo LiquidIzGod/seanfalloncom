@@ -7,3 +7,12 @@
     text-align: center;
     border-radius: 8px;
   }
+
+  .banner h1 {
+    font-size: 1.5em; /* Increase the font size for a more prominent heading */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark color for the text */
+    margin: 20px 0; /* Add some margin for spacing */
+    text-transform: uppercase; /* Optionally, transform text to uppercase */
+    letter-spacing: 1px; /* Add some letter spacing */
+  }

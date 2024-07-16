@@ -9,7 +9,7 @@ const Home = () => {
     <MainContent>
       <Banner />
       <CardContainer />
-      <h1>Home Component with MainContent, Banner, and CardContainer</h1>
+      <h1>This is the Home Page Component with MainContent, Banner, and CardContainer</h1>
     </MainContent>
   );
 };
