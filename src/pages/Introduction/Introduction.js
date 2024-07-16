@@ -1,11 +1,13 @@
 import React from "react";
 import "./Introduction.css";
+import ImageComponent from "./ImageComponent";
+import TextComponent from "./TextComponent";
 
 const Introduction = () => {
   return (
     <div className="introduction">
-      <img src="https://via.placeholder.com/800x400" alt="Introduction" />
-      <p>This is the introduction text. Welcome to our website!</p>
+      <TextComponent />
+      <ImageComponent />
     </div>
   );
 };
