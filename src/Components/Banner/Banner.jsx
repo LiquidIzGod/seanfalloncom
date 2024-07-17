@@ -4,7 +4,7 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div className="banner">
-      <h1>Welcome SeanFallon.com Alpha V1.6</h1>
+      <h1>Welcome SeanFallon.com Alpha V1.7</h1>
     </div>
   );
 };

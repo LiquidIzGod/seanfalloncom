@@ -19,10 +19,3 @@
   width: 100%; /* Ensure content also respects width constraints */
   box-sizing: border-box;
 }
-
-@media (max-width: 768px) {
-  .content {
-    padding: 5px;
-  }
-}
-  

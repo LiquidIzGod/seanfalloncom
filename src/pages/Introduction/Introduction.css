@@ -7,12 +7,31 @@
   background-position: center;
   min-height: 100vh;
   padding: 20px;
+  height: 100vh; /* Ensure full height */
+  width: 100%; /* Ensure full width */
 }
 
 @media (max-width: 768px) {
   .introduction {
     flex-direction: column;
     text-align: center;
+    position: relative; /* Ensure the container is positioned relatively */
+    height: 100vh; /* Ensure full height */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .intro-text {
+    position: absolute;
+    bottom: 30%; /* Adjust this value to control vertical position */
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center; /* Center text horizontally */
+    background-color: transparent; /* Remove the black background */
+  }
+
+  .bg-profile-container {
+    order: 1;
   }
 }
-

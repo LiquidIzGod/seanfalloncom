@@ -4,6 +4,7 @@
     text-align: left;
     max-width: 600px;
     padding: 20px;
+    border: 2px solid blue; /* This will help visualize the header's boundary */
   }
   
   .intro-text h1 {
@@ -30,3 +31,5 @@
   .call-to-action:hover {
     background-color: #e5c05a;
   }
+
+  
