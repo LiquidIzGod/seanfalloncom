@@ -17,8 +17,6 @@
     text-align: center;
     position: relative; /* Ensure the container is positioned relatively */
     height: 100vh; /* Ensure full height */
-    background-size: cover;
-    background-position: center;
   }
 
   .intro-text {
