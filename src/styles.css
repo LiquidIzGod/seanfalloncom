@@ -2,19 +2,10 @@
     font-family: sans-serif;
     text-align: center;
   }
+  /* Should I add box-sizing: border-box; */
   
   body {
     margin: 0;
     padding: 0;
     font-family: sans-serif; /* Optional: Set a default font family */
   }
-  
-  /* For Box.js this is used for testing. */
-  .box-placement {
-    text-align: right;
-  }
-  
-  .box-color {
-    background-color: #282c34;
-  }
-  

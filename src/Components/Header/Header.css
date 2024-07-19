@@ -13,7 +13,122 @@
   overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-.header .logo {
-  font-size: 1.5em;
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo:hover {
+  background-color: #1e90ff; /* Tech-inspired blue */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Inner circle animation */
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo:hover .circle {
+  background-color: #87ceeb; /* Lighter blue */
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Brackets and letter S container */
+.brackets {
+  display: flex;
+  align-items: baseline; /* Align brackets with the S */
+}
+
+/* Curly brackets */
+.curly-bracket {
+  font-size: 60px; /* Increase size */
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-2px); /* Raise the curly brackets */
+}
+
+.logo:hover .curly-bracket {
+  color: #fff;
+  transform: translateY(-4px); /* Maintain the raise on hover */
+}
+
+.left-bracket {
+  margin-right: -5px; /* Adjust margin to bring closer */
+}
+
+.right-bracket {
+  margin-left: -5px; /* Adjust margin to bring closer */
+}
+
+/* Letter S styling */
+.s {
+  font-size: 50px;
   font-weight: bold;
+  color: #333;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-2px); /* Raise the S up */
+}
+
+.logo:hover .s {
+  color: #fff;
+  transform: translateY(-2px) scale(1.2); /* Maintain the raise on hover */
+}
+
+/* Background symbols */
+.background-symbols {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.symbol {
+  position: absolute;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.3); /* Make symbols more visible */
+  animation: float-down 5s linear infinite;
+  white-space: nowrap;
+}
+
+.symbol:nth-child(1) {
+  top: -30px;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.symbol:nth-child(2) {
+  top: -30px;
+  left: 70%;
+  animation-delay: 2s;
+}
+
+@keyframes float-down {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
 }
