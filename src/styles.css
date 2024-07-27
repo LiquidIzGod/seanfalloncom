@@ -1,11 +1,36 @@
+  /* styles.css V.1.1: Global layout adjusted, max with added.*/
+
+/* Define color palette */
+:root {
+  --primary-color: #012055;        /* Dark Blue */
+  --secondary-color: #0182BD;      /* Bright Blue */
+  --accent-color: #FFC107;         /* Vibrant Yellow */
+  --neutral-background: #E0E0E0;   /* Off-White */
+  --text-color: #F0F0F0;           /* Light Grey */
+  --footer-color: #B39DDB;         /* Muted Purple */
+}
+
+/* Global typography */
+body {
+  font-family: Arial, sans-serif;  /* Sets a readable, web-safe font */
+  font-size: 16px;                 /* Default font size */
+  line-height: 1.6;                /* Default line height for readability */
+  background-color: var(--neutral-background);
+  color: var(--text-color);
+  margin: 0;                       /* Reset default margin */
+  padding: 0;                      /* Reset default padding */
+  box-sizing: border-box;          /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Main container settings */
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  /* Should I add box-sizing: border-box; */
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif; /* Optional: Set a default font family */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;              /* Use the full width available */
+  max-width: 1200px;        /* Prevents the content from being too wide on large screens */
+  margin: 0 auto;           /* Centers the container horizontally */
+  padding: 0 1rem;          /* Adds horizontal padding for small screens */
+  box-sizing: border-box;   /* Ensures padding and border are included in the element's total width and height */
+}
+

@@ -1,18 +1,22 @@
 /* Banner.css */
 .banner {
-    width: 100%;
-    padding: 50px 20px;
-    background-color: #0182BD;
-    color: white;
-    text-align: center;
-    border-radius: 8px;
-  }
+  width: 100%;
+  padding: 50px 20px;
+  background-color: var(--secondary-color); /* Using the defined CSS variable for background color */
+  color: var(--text-color); /* Using the defined CSS variable for text color */
+  text-align: center;
+  border-radius: 8px;
+}
 
-  .banner h1 {
-    font-size: 1.5em; /* Increase the font size for a more prominent heading */
-    font-weight: bold; /* Make the text bold */
-    color: #333; /* Dark color for the text */
-    margin: 20px 0; /* Add some margin for spacing */
-    text-transform: uppercase; /* Optionally, transform text to uppercase */
-    letter-spacing: 1px; /* Add some letter spacing */
-  }
+.banner h1 {
+  font-size: 2rem; /* Increase the font size for a more prominent heading */
+  font-weight: bold; /* Make the text bold */
+  color: var(--primary-color); /* Using the defined CSS variable for text color */
+  margin: 20px 0; /* Add some margin for spacing */
+  text-transform: uppercase; /* Optionally, transform text to uppercase */
+  letter-spacing: 1px; /* Add some letter spacing */
+}
+
+.banner:hover {
+  transform: scale(1.048); /*  Slightly scale up on hover */
+}

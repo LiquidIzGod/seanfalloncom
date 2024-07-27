@@ -1,5 +1,13 @@
-/* reset.css */
+/* reset.css V1.1: Layout defaults added.*/
 
+/* Layout defaults */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* CSS resets */
 html,
 body,
 div,
