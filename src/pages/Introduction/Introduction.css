@@ -1,35 +1,123 @@
+/* Introduction.css V1.8: Adjustments for medium and small screens */
+
+/* Main container for the introduction */
 .introduction {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-image: url('../../assets/images/bg_blue_texture.jpg'); /* Path to your background image */
+  background-image: url('../../assets/images/bg_blue_texture.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   padding: 20px;
-  height: 100vh; /* Ensure full height */
-  width: 100%; /* Ensure full width */
+  width: 100%;
+  position: relative;
 }
 
-@media (max-width: 768px) {
+/* IntroText component styling */
+.intro-text {
+  color: #fff;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1; /* Ensure text stays on top */
+}
+
+.intro-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.intro-text p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.call-to-action {
+  background-color: #fed766;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action:hover {
+  background-color: #e5c05a;
+}
+
+/* BgProfile component styling */
+.bg-profile-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-image {
+  max-width: 800px; /* Increased max width for large screens */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive design for medium screens */
+@media (max-width: 1024px) {
   .introduction {
-    flex-direction: column;
-    text-align: center;
-    position: relative; /* Ensure the container is positioned relatively */
-    height: 100vh; /* Ensure full height */
+    flex-direction: row;
+    justify-content: center;
   }
 
   .intro-text {
+    margin-top: 0;
     position: absolute;
-    bottom: 30%; /* Adjust this value to control vertical position */
+    bottom: 25%; /* Position text to align with the bottom 25% of the image */
     left: 0;
     right: 0;
     padding: 20px;
     text-align: center; /* Center text horizontally */
-    background-color: transparent; /* Remove the black background */
+    background-color: rgba(0, 0, 0, 0.7); /* Ensure background color is consistent */
+  }
+
+  .profile-image {
+    max-width: 700px; /* Adjust max width for medium screens */
+  }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .introduction {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .intro-text {
+    order: 2;
+    margin-top: 20px;
+    position: absolute; /* Ensure text is absolute */
+    bottom: 0; /* Ensure text is at the bottom */
+    left: 50%; /* Center text horizontally */
+    transform: translateX(-50%);
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Ensure background color is consistent */
   }
 
   .bg-profile-container {
     order: 1;
+  }
+
+  .profile-image {
+    max-width: 100%;
   }
 }

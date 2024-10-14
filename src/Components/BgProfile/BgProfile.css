@@ -1,15 +1,17 @@
-/* BgProfile.css v1.0 */
+/* BgProfile.css V1.1: Adjusted for responsive layout */
+
+/* BgProfile component styling */
 .bg-profile-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid blue; /* This will help visualize the header's boundary */
-  }
-  
-  .profile-image {
-    width: 800px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensures positioning for relative elements */
+}
+
+.profile-image {
+  width: 800px; /* Fixed width for large screens */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  border: 2px solid red;
+}

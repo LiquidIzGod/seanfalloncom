@@ -1,3 +1,4 @@
+/* BgProfile.jsx v1.1 */
 import React from "react";
 import "./BgProfile.css";
 import profileImage from "../../assets/images/Me_cropped.png"; // Import the image

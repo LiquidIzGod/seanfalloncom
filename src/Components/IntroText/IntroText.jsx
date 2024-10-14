@@ -1,4 +1,4 @@
-/* IntroText.js v1.1 */
+/* IntroText.jsx v1.1 */
 import React from "react";
 import "./IntroText.css";
 

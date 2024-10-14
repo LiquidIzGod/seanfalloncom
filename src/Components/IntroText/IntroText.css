@@ -1,5 +1,6 @@
-/* IntroText.css V1.1 */
+/* IntroText.css V1.2: Adjusted for responsive layout */
 
+/* IntroText component styling */
 .intro-text {
   color: #fff;
   text-align: left;
@@ -10,6 +11,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   backdrop-filter: blur(10px); /* Blurred background for a glassy effect */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  z-index: 1; /* Ensure text stays on top */
+  position: relative; /* Ensure relative positioning */
 }
 
 .intro-text h1 {
