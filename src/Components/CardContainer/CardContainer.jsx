@@ -7,6 +7,7 @@ const CardContainer = () => {
       <div className="card">
         <div className="text-content">
           <h1>Patch Notes</h1>
+          <h2>Alpha V0.2.4 - hamburger menu close fix. Global responsiveness added.</h2>
           <h2>Alpha V0.2.3: Logo link, fix blue underline. Navbar black.</h2>
           <h2>Alpha V0.2.2 : Bug fix. Glassy card enlarge causing blurry text.</h2>
           <h2>Alpha V0.2.1 : Global layout fix, max width. Glass card for intro page added.</h2>
@@ -30,10 +31,10 @@ const CardContainer = () => {
           <h3>- Solve intro page responsive scale issue maybe border-box.</h3>
           <h3>- Add bg card for IntroText.</h3>
           <h2>Navbar hamburger</h2>
-          <h3>- Stays open after click.</h3>
+          <h3>- Stays open after click. DONE</h3>
           <h3>- Narrow card a bit.</h3>
           <h2>Logo</h2>
-          <h3>- Add link back to home page.</h3>
+          <h3>- Add link back to home page. DONE</h3>
         </div>
       </div>
     </div>
