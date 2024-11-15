@@ -4,13 +4,25 @@ import homeIcon from "../../assets/icons/icon_home.png";
 import introIcon from "../../assets/icons/icon_introductions.png";
 import skillsIcon from "../../assets/icons/icon_skillsets.png";
 import contentIcon from "../../assets/icons/icon_content.png";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate(); // useNavigate hook for navigation
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLinkClick = (path) => {
+    if (window.innerWidth <= 768) {
+      setTimeout(() => {
+        setIsOpen(false); // Close the menu after the delay
+        navigate(path); // Navigate to the selected page
+      }, 300); // Delay of 300ms for the animation
+    } else {
+      navigate(path); // For desktop, navigate immediately
+    }
   };
 
   return (
@@ -20,28 +32,40 @@ const Navbar = () => {
       </div>
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li className="nav-item">
-          <NavLink to="/" className="nav-link" activeClassName="active">
+          <span
+            className="nav-link"
+            onClick={() => handleLinkClick("/")}
+          >
             <img src={homeIcon} alt="Home" className="nav-icon" />
             <span className="nav-text">Home</span>
-          </NavLink>
+          </span>
         </li>
         <li className="nav-item">
-          <NavLink to="/introductions" className="nav-link" activeClassName="active">
+          <span
+            className="nav-link"
+            onClick={() => handleLinkClick("/introductions")}
+          >
             <img src={introIcon} alt="Introductions" className="nav-icon" />
             <span className="nav-text">Introductions</span>
-          </NavLink>
+          </span>
         </li>
         <li className="nav-item">
-          <NavLink to="/skillsets" className="nav-link" activeClassName="active">
+          <span
+            className="nav-link"
+            onClick={() => handleLinkClick("/skillsets")}
+          >
             <img src={skillsIcon} alt="Skillsets" className="nav-icon" />
             <span className="nav-text">Skillsets</span>
-          </NavLink>
+          </span>
         </li>
         <li className="nav-item">
-          <NavLink to="/content" className="nav-link" activeClassName="active">
+          <span
+            className="nav-link"
+            onClick={() => handleLinkClick("/content")}
+          >
             <img src={contentIcon} alt="Content" className="nav-icon" />
             <span className="nav-text">Content</span>
-          </NavLink>
+          </span>
         </li>
       </ul>
     </nav>

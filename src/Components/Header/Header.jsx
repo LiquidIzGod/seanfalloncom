@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar"; // Import Navbar
+import { NavLink } from "react-router-dom"; // Import NavLink for routing
 import "./Header.css"; // Ensure this CSS file includes the styles for the logo
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">
+      <NavLink to="/" className="logo"> {/* Wrap the logo in a NavLink */}
         <div className="circle">
           <div className="brackets">
             <span className="curly-bracket left-bracket">{'{'}</span>
@@ -17,7 +18,7 @@ const Header = () => {
           <span className="symbol">&lt;/&gt;</span>
           <span className="symbol">&#123;...&#125;</span>
         </div>
-      </div>
+      </NavLink>
       <Navbar /> {/* Include Navbar here */}
     </header>
   );
