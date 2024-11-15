@@ -4,7 +4,7 @@
 .bg-profile-container {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   position: relative; /* Ensures positioning for relative elements */
 }
@@ -14,4 +14,13 @@
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px;
   border: 2px solid red;
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    width: 500px; /* Fixed width for large screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    border: 2px solid blue;
+  }
 }

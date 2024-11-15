@@ -15,7 +15,7 @@ body {
   font-family: Arial, sans-serif;  /* Sets a readable, web-safe font */
   font-size: 16px;                 /* Default font size */
   line-height: 1.6;                /* Default line height for readability */
-  background-color: rgb(0, 55, 134);
+  background-color: rgb(16, 16, 16);
   color: var(--text-color);
   margin: 0;                       /* Reset default margin */
   padding: 0;                      /* Reset default padding */

@@ -1,41 +1,62 @@
-/* IntroText.css V1.2: Adjusted for responsive layout */
+/* IntroText.css V1.3: Cleaned up and improved for component-specific styling */
 
-/* IntroText component styling */
+/* Base styling for the IntroText component */
 .intro-text {
   color: #fff;
   text-align: left;
-  max-width: 600px;
+  max-width: 600px; /* Maximum width for the text card */
   padding: 20px;
   background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  border-radius: 10px;
+  border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  backdrop-filter: blur(10px); /* Blurred background for a glassy effect */
+  backdrop-filter: blur(10px); /* Glassy effect */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
-  z-index: 1; /* Ensure text stays on top */
-  position: relative; /* Ensure relative positioning */
+  z-index: 1; /* Layer above the profile image */
 }
 
+/* Typography styling */
 .intro-text h1 {
-  font-size: 2.5em;
+  font-size: 2.5em; /* Large heading size */
   margin-bottom: 0.5em;
+  color: #e5c05a;
 }
 
 .intro-text p {
-  font-size: 1.2em;
+  font-size: 1.2em; /* Text size for paragraph */
   margin-bottom: 1em;
 }
 
+/* Call-to-action button styling */
 .call-to-action {
-  background-color: #fed766;
-  color: #333;
+  background-color: #fed766; /* Vibrant yellow for the button */
+  color: #333; /* Dark text color */
   border: none;
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .call-to-action:hover {
-  background-color: #e5c05a;
+  background-color: #e5c05a; /* Slightly darker yellow on hover */
+}
+
+/* Responsive adjustments */
+/* Medium */
+@media (max-width: 1024px) {
+
+}
+
+/* Large */
+@media (max-width: 768px) {
+  .intro-text {
+    text-align: center; /* Center text on smaller screens */
+  }
+  .intro-text h1 {
+    font-size: 2em; /* Adjust heading size for medium screens */
+  }
+  .intro-text p {
+    font-size: 1em; /* Adjust paragraph size */
+  }
 }
